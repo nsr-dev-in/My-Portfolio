@@ -1,0 +1,356 @@
+/* ======================
+   GLOBAL RESET
+====================== */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#1e1e1e;
+    font-family:sans-serif;
+    color:#a0a0a0;
+    line-height:1.6;
+    min-height:100vh;
+}
+
+/* ======================
+   MAIN LAYOUT
+====================== */
+
+.main-container{
+    display:grid;
+    max-width:1200px;
+    grid-template-columns:320px 1fr;
+    gap:40px;
+    margin:auto;
+    padding:40px 20px;
+    min-height:100vh;
+}
+
+/* ======================
+   SIDEBAR
+====================== */
+
+.sidebar{
+    background:#2a2a2a;
+    border:1px solid #3a3a3a;
+    border-radius:16px;
+    padding:40px;
+    position:sticky;
+    top:40px;
+    height:fit-content;
+}
+
+.main-content{
+    background:#2a2a2a;
+    border:1px solid #3a3a3a;
+    border-radius:16px;
+    padding:40px;
+}
+
+/* ======================
+   PROFILE
+====================== */
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.profile h2{
+    font-size:1.5rem;
+    margin-top:20px;
+    color:#e0e0e0;
+}
+
+.profile p{
+    background:#1e1e1e;
+    color:#FFBF00;
+    padding:5px 15px;
+    border:1px solid #3a3a3a;
+    font-size:0.8rem;
+    border-radius:8px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+/* ======================
+   CONTACT
+====================== */
+
+.contact{
+    margin-top:30px;
+    border-top:2px solid #3a3a3a;
+    padding-top:20px;
+}
+
+.label{
+    font-size:0.8rem;
+}
+
+.value{
+    color:#e0e0e0;
+    text-decoration:none;
+}
+
+.email,.phone{
+    margin-bottom:10px;
+}
+
+/* ======================
+   SOCIAL
+====================== */
+
+.social-media{
+    margin-top:30px;
+    border-top:2px solid #3a3a3a;
+    padding-top:20px;
+    text-align:center;
+}
+
+.social-media img{
+    width:24px;
+    height:24px;
+    margin:0 6px;
+    filter:grayscale(1) invert(0.7);
+    transition:.3s;
+}
+
+.social-media img:hover{
+    filter:grayscale(0) invert(0);
+}
+
+/* ======================
+   NAVIGATION
+====================== */
+
+.navigation{
+    border-bottom:2px solid #3a3a3a;
+    margin-bottom:20px;
+    padding-bottom:20px;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:flex-end;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#a0a0a0;
+    font-weight:500;
+}
+
+.active, nav a:hover{
+    color: #FFBF00;
+}
+
+/* ======================
+   COMMON SECTION
+====================== */
+
+.heading{
+    color:#e0e0e0;
+    margin-bottom:15px;
+}
+
+.line{
+    height:5px;
+    width:60px;
+    background:#FFBF00;
+    margin-bottom:20px;
+}
+
+.content{
+    text-align:justify;
+}
+
+/* ======================
+   SKILLS
+====================== */
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:25px;
+}
+
+.item{
+    padding:20px;
+    border-radius:10px;
+    border:2px solid #3a3a3a;
+    background:#1e1e1e;
+    text-align:center;
+    transition:.3s;
+}
+
+.item img{
+    width:48px;
+    height:48px;
+    margin-bottom:15px;
+
+    /* YELLOW THEME ICON COLOR */
+    filter: invert(75%)
+            sepia(60%)
+            saturate(900%)
+            hue-rotate(350deg)
+            brightness(110%)
+            contrast(105%);
+}
+
+.item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* ======================
+   EDUCATION
+====================== */
+
+.edtech{
+    position:relative;
+    margin-top:20px;
+}
+
+.edu1,.edu2{
+    margin-bottom:30px;
+    padding-left:30px;
+    position:relative;
+}
+
+.goal{
+    height:15px;
+    width:15px;
+    border:3px solid #FFBF00;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:5px;
+}
+
+.liner{
+    position:absolute;
+    width:2px;
+    top:0;
+    bottom:0;
+    border:2px solid #3a3a3a;
+    left:5px;
+}
+
+/* ======================
+   PORTFOLIO
+====================== */
+
+.project-container{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.projects{
+    background:#1e1e1e;
+    border-radius:12px;
+    border:1px solid #3a3a3a;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.projects img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.projects:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.card{
+    padding:20px;
+}
+
+.card h3{
+    color:#e0e0e0;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:20px;
+}
+
+.card span{
+    background:rgba(255,191,0,0.1);
+    color:#FFBF00;
+    padding:4px 8px;
+    border-radius:5px;
+    font-size:.75rem;
+    margin-right:5px;
+}
+
+
+
+
+/* ======================
+   RESPONSIVE BREAKPOINTS
+====================== */
+
+/* ---------- TABLET ---------- */
+@media (max-width:1024px){
+
+    .main-container{
+        grid-template-columns:250px 1fr;
+        gap:25px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:768px){
+
+    .main-container{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        position:relative;
+        top:0;
+        text-align:center;
+    }
+
+    .nav-links{
+        justify-content:center;
+    }
+
+    .main-content{
+        padding:25px;
+    }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width:480px){
+
+    .profile img{
+        width:90px;
+        height:90px;
+    }
+
+    .heading{
+        font-size:1.3rem;
+    }
+
+    .card{
+        padding:15px;
+    }
+}
